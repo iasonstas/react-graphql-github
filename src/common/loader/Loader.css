@@ -1,0 +1,22 @@
+.loader {
+  margin: 5rem auto;
+  border: 10px solid white;
+  border-bottom: 10px solid #1a1a52;
+  border-right: 10px solid #3a3ab8;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation-name: spin;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: abs($number: 5);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

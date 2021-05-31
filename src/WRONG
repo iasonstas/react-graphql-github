@@ -1,0 +1,25 @@
+useEffect(() => {
+  if (!loading) {
+    console.log('Output ~ file: Home.jsx ~ line 24 ~ useEffect ~ data', data);
+    setResult(data);
+  }
+  // const fetchData = async () => {
+  //   // call GraphQl API
+  //   const queryResult = await axios
+  //     .post(
+  //       apiUrl,
+  //       JSON.stringify({
+  //         query: LOAD_ISSUES,
+  //         variables: {
+  //           owner: 'facebook',
+  //           name: 'react'
+  //         }
+  //       })
+  //     )
+  //     .then(res => console.log(res));
+
+  //   const result = queryResult.data.data;
+  //   console.log('Output ~ file: Home.jsx ~ line 34 ~ fetchData ~ data', result);
+  // };
+  // fetchData();
+}, [data]);
